@@ -10,9 +10,9 @@
 	box-sizing: border-box;
 } */
 
-form > * {
+/* form > * {
 	outline: none;
-}
+} */
 
 a {
 	text-decoration: none;
@@ -83,8 +83,13 @@ p {
 
 
 .container {
-	max-width: 1200px; /* max 'width' of contents of site */
-	margin: 0 auto; /* centered horizontally  */
+	max-width: 1200px; 
+	margin: 0 auto; 
+}
+.container-nav{
+	max-width: 1920px;
+	margin: 0 auto;
+	display: inline-block;
 }
 
 .nav-bar {
@@ -297,7 +302,7 @@ p {
 
 </style>
 <nav class="nav-bar">
-	<div class="container">
+	<div class="container-nav">
 		<input type="checkbox" id="drop-down-cbox"/>
 		<label for="drop-down-cbox">
 			<span></span>
@@ -307,7 +312,7 @@ p {
 
 		<h1 class="site-logo">
             <a class="navbar-brand" href="/">
-				<img src="assets/img/logo.png" width="200px" >
+				<img src="assets/img/IMPIT_logo.png" width="200px" >
                 {{-- <img src="https://static.wixstatic.com/media/a983bc_c9d2a261a7ba4174a898ee09b215ccbd~mv2.png/v1/crop/x_89,y_188,w_351,h_138/fill/w_252,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO_1-removebg-preview%20(2).png" alt=""> --}}
             </a>
         </h1>

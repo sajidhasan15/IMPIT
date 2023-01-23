@@ -24,6 +24,7 @@
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
         <link href="{{ asset('css/base.css') }}" rel="stylesheet" />
         {{-- <link href="{{ asset('css/styleMain.css') }}" rel="stylesheet" /> --}}
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <style>
             .hover-zoom{
@@ -423,7 +424,7 @@
             </div>
         </nav> --}}
         <!-- Masthead-->
-        @include('layouts.header')
+        @include('layouts.header2')
         
         {{-- <img src="assets/img/2.jpg" class="d-block w-100 h-100" alt="..."> --}}
         <img src="assets/img/IMPIT.jpg" class="w-100" alt="...">
@@ -489,29 +490,29 @@
                 </div>
             </div> --}}
         </header>
+        @include('pages.management')
                {{-- Services --}}
-        <section class="Service-section text-center" style="padding-top: 1%;padding-bottom: 5%; background: #C8C8C8; id="services">
-            <div class="container px-4 px-lg-5">
+      {{--  <section class="Service-section " style="padding-top: 1%;padding-bottom: 5%; background: #000; id="services">
+            <div class="container text-center">
                 <div class="row  justify-content-center">
                     <div class="col-lg-8">
 
-            <div class="containerGallery">
-                <div class="headingGallery">
-                    {{-- <h2 class="display-4 font-bold text-uppercase">Services</h2> --}}
-                </div>
-            </div>
-            <style>
-                            .members:hover{
-                                transform: translateY(-10px);
-                            }
+                            <div class="containerGallery">
+                                <div class="headingGallery">
+                                     <h2 class="display-4 font-bold text-uppercase">Services</h2> 
+                                </div>
+                            </div>
+                            <style>
+                
                             
                         </style>
-                        {{-- <h2 class="display-4 font-bold text-uppercase">Services</h2> --}}
+                        <h2 class="display-4 font-bold text-uppercase" style="color: #fff">IMPIT MANAGEMENT IS</h2>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col service-business">
-                                <div class="card h-100 px-3 members">
+                            <div class="col service-business" style="text-align: center">
+                                <div class="card h-100 px-3 members" style="margin: 10%">
                                     <div class="pt-3">
-                                        <i class="fa-solid fa-hurricane fa-3x" style="color: #EDCD1F; padding:12%;"></i>
+                                        <img src="/assets/img/icon1.png" alt="" style="display: block;  margin-left: auto; margin-right: auto;">
+
                                     </div>
                                 <i class="bi bi-briefcase"></i>
                                 <div class="card-body">
@@ -523,21 +524,23 @@
                                 </div>
                             </div>
                             <div class="col service-accounting">
-                                <div class="card h-100 px-3 members">
+                                <div class="card h-100 px-3 members" style="margin: 10%">
                                     <div class="pt-3">
-                                        <i class="fa-solid fa-arrow-up-right-dots fa-3x" style="color: #EDCD1F; padding:12%;"></i>
+                                        <img class="content-center" src="/assets/img/icon2.png" alt=""style="display: block;  margin-left: auto; margin-right: auto;">
+
                                     </div>
                                 <div class="card-body">
-                                    <h5 style="text-transform: uppercase; font-weight: 600;" class="card-title">Efficiency</h5>
+                                    <h5 style="text-transform: uppercase; font-weight: 600;" class="card-title">EFFICIENT</h5>
                                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
                                     </p>
                                 </div>
                                 </div>
                             </div>
                             <div class="col service-analysis">
-                                <div class="card h-100 px-3 members">
+                                <div class="card h-100 px-3 members" style="margin: 10%">
                                     <div class="pt-3">
-                                        <i class="fa-solid fa-atom fa-3x" style="color: #EDCD1F; padding:12%;"></i>
+                                        <img class="content-center" src="/assets/img/icon3.png" alt=""style="display: block;  margin-left: auto; margin-right: auto;">
+
                                     </div>
                                 <div class="card-body">
                                     <h5 style="text-transform: uppercase; font-weight: 600;" class="card-title">Dynamic</h5>
@@ -550,19 +553,22 @@
                         </div>
                         
                     </div>
-                </div>
+                </div>--}}
                 {{-- <img class="img-fluid" src="assets/img/ipad.png" alt="..." /> --}}
             </div>
-            @include('pages.notification')
+            {{-- @include('pages.notification') --}}
         </section>
         <!-- About-->
-        <section class="about section-padding" style=" background: #C8C8C8; padding-bottom: 3%;" id="about">
+        <section class="about section-padding" style=" background: #C8C8C8; padding-top: 3%; padding-bottom: 3%;" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-12">
                         <div class="about-img"><img alt="" class="img-fluid" src="assets/img/IMPIT.png"></div>
                     </div>
-                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        {{-- <div class="about-img"><img alt="" class="img-fluid" src="assets/img/IMPIT.png"></div> --}}
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12 ps-lg-5 mt-md-5">
                         <div class="about-text">
                             <h2 class="pt-2" style="color: #000" >We Provide the Best Quality<br>
                             Services Ever</h2>
@@ -597,7 +603,7 @@
 					<div class="section-header text-center pb-5">
 						<div class="containerGallery" style="color: #fff;">
                             <div class="" >
-                                <h2 class="display-4 font-bold text-uppercase">Our Team</h2>
+                                <h2 class="display-4 font-bold text-uppercase">Our Management</h2>
                             </div>
                         </div>
                         {{-- <div class=""></div> --}}
@@ -606,8 +612,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 col-md-6 col-lg-3">
+            <div class="row">
+				<div class="col-12 col-sm-3 col-md-6 col-lg-6">
                         <style>
                             .member:hover{
                                 transform: translateY(-10px);
@@ -616,44 +622,79 @@
                         </style>
 					<div class="card member text-center">
 						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
-							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png">
+							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png" style="display: block;  margin-left: auto; margin-right: auto;">
 							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="card-text pb-1">Chief Executive Officer</p>
 							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-sm-3 col-md-6 col-lg-6">
 					<div class="card member text-center">
 						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
-							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png">
+							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png" style="display: block;  margin-left: auto; margin-right: auto;">
 							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="card-text pb-1">Chief Executive Officer</p>
 							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card member text-center">
-						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
-							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png">
-							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
-							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-3">
-					<div class="card member text-center">
-						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
-							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png">
-							<h3 class="card-title py-2">Jack Wilson</h3>
-							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
-							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
-						</div>
-					</div>
-				</div>
+			
 			</div>
+            <div class="containerGallery" style="color: #fff;">
+                <div class="" >
+                    <h2 class="display-4 font-bold text-uppercase">Our Team</h2>
+                </div>
+            </div>
+            @include('pages.teamMember')
+			<div class="row">
+				{{-- <div class="col-12 col-md-6 col-lg-3">
+                        <style>
+                            .member:hover{
+                                transform: translateY(-10px);
+                            }
+                            
+                        </style>
+					<div class="card member text-center">
+						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
+							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png" style="display: block;  margin-left: auto; margin-right: auto;">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text pb-1">Chief Executive Officer</p>
+							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card member text-center">
+						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
+							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png" style="display: block;  margin-left: auto; margin-right: auto;">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text pb-1">Chief Executive Officer</p>
+							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card member text-center">
+						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
+							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png" style="display: block;  margin-left: auto; margin-right: auto;">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text pb-1">Chief Executive Officer</p>
+							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card member text-center">
+						<div class="card-body" style="box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);">
+							<img alt="" class="img-fluid rounded-circle" src="assets/img/profileee .png" style="display: block;  margin-left: auto; margin-right: auto;">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text pb-1">Chief Executive Officer</p>
+							<p class="socials"><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp; <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div> --}}
 		</div>
 	</section><!-- team ends -->
 
@@ -797,15 +838,15 @@
                         </div>
                     </div>
 
-                    <div class="btnGallery">
+                    {{-- <div class="btnGallery">
                         <a href="/gallery">See More</a>
-                    </div>
+                    </div> --}}
             </div>
 		</div>
 	</section><!-- gallery ends -->
 
                 	<!-- Career starts -->
-	<section class="team section-padding" style="padding-top: 3%; padding-bottom: 0;" id="career">
+	<section class="team section-padding" style="padding-top: 3%; padding-bottom: 3%;" id="career">
 		<div class="container">
 
             <div class="containerGallery">
@@ -821,7 +862,7 @@
 
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <img src="assets/img/join.png" class="img-fluid" alt="Join Now">
+                            {{-- <img src="assets/img/join.png" class="img-fluid" alt="Join Now"> --}}
                         </div>
                     </div>
                 </div>
@@ -835,6 +876,7 @@
             </div>
 		</div>
 	</section><!-- career ends -->
+    {{-- @include('pages.video') --}}
 {{-- 
                     <section class="gallery min-vh-100">
                     <div class="container">
@@ -1073,9 +1115,9 @@
             <iframe class="embed-responsive-item" src="https://youtu.be/zYrKvaOwsEQ" allowfullscreen></iframe>
         </div>  
         </center> --}}
-        <center style="padding: 3%">
+        {{-- <center style="padding: 3%">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/zYrKvaOwsEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </center>
+        </center> --}}
 
         
         

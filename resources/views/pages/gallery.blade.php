@@ -318,7 +318,7 @@
                 </div>
             </div>
         </nav> --}}
-        @include('layouts.header')
+        @include('layouts.header2')
         <button class="go-top-btn">
             <img src="assets/img/arrow-up.png" alt="arrow up">
         </button>

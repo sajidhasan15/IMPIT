@@ -41,7 +41,7 @@
             }
 
             .section-bg {
-            background-color: #f3f5fa;
+            background-color: #C8C8C8;
             }
 
             .section-title {
@@ -332,7 +332,7 @@
                 </div>
             </div>
         </nav> --}}
-        @include('layouts.header')
+        @include('layouts.header2')
         <button class="go-top-btn">
             <img src="assets/img/arrow-up.png" alt="arrow up">
         </button>
@@ -497,7 +497,7 @@
             </div>
           </form>
         </div>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+              {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
             </div>
           </div>
     

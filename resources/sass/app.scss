@@ -1,8 +1,19 @@
 // Fonts
 @import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('/assets/fonts/FuturaPTBold.ttf');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: 'Futura PT Bold';
+    src: url('/assets/fonts/FuturaPTBold.woff2') format('woff2'), 
+    url('/assets/fonts/FuturaPTBold.woff') format('woff'),
+    url('/assets/fonts/futura-pt-bold.otf') format('otf'),
+    url('/assets/fonts/FuturaPTBold.ttf') format('ttf');
+  }
+
+  @import "fonts";
